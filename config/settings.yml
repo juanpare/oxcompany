@@ -1,0 +1,17 @@
+development: &non_production_settings
+  site_url: http://localhost:3000
+  site_name: oxCompany
+  admin_email: juanpare@oniixs.com
+  
+test:
+  <<: *non_production_settings
+
+staging:
+  site_url: http://oxcompany.oniixs.com
+  site_name: oxCompany
+  admin_email: juanpare@oniixs.com  
+  
+production:
+  site_url: http://oniixs.com
+  site_name: Oniixs
+  admin_email: juanpare@oniixs.com
